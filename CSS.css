@@ -1,0 +1,97 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+width: 100%; height: 100vh;
+background-image: url('https://www.treebo.com/blog/wp-content/uploads/2018/07/feature-17.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background-color: rgba(0,0,0,0.2)
+    color: rgb(253, 253, 253); display: flex; justify-content: space-between;
+    align-items: center;text-transform: uppercase;
+}
+
+nav .logo{
+ width: 23%; text-align: center;
+ 
+}
+
+nav .menu{
+    width: 40%; 
+    display: flex; justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none; color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color: black
+}
+
+section{
+
+}
+section h3{
+    font-size: 29px; font-weight: 200; letter-spacing: 3px;
+text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+font-size: 55px;
+font-weight: 700;
+text-shadow: 2px 1px 5px black;
+text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    color:black;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section .btnone{
+    background: black;
+color: white;
+}
+
+.change_content : ::after{
+    content: '';
+    animation: changetext 10s 86400s  ;
+    color: turquoise;
+}
+
+@keyframes changetext{
+    0%{content: "vesu";}
+    20%{content: "shyam mandir";}
+    35%{content: "woop and decathlon";}
+    60%{content: "dumas beach ";}
+    80%{content: "citylight";}
+    100%{ content: "eat locho ";}
+}
